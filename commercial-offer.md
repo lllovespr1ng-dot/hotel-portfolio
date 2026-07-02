@@ -92,5 +92,5 @@
 Контакт:
 
 - Telegram: https://t.me/lllovespr1ng
-- Email: lllovespr1ng@gmail.com
+- Почта: lllovespr1ng@gmail.com
 

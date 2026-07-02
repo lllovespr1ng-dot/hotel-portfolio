@@ -8,9 +8,13 @@
 - `demos/boutique/` — демо для бутик-отеля.
 - `demos/apart/` — демо для апарт-отеля.
 - `demos/spa/` — демо для курортного СПА-отеля.
+- `demos/architector/` — персональное демо для апарт-отеля «Архитектор».
+- `demos/monteville/` — персональное демо для «Монтевиль by Adamand Resort».
+- `demos/center-plaza/` — персональное демо для Center Plaza Sochi.
 - `first-leads-sochi.csv` — стартовая база из 25 лидов.
 - `client-outreach.md` — скрипты первых сообщений.
 - `sales-pipeline.md` — воронка и статусы продаж.
+- `go-to-market-plan.md` — план размещения портфолио и поиска первых клиентов.
 
 ## Локальный просмотр
 
@@ -56,4 +60,3 @@ Deployment failed, try again later.
 ```
 
 Код сайта собирается корректно; проблема не в файлах проекта.
-
