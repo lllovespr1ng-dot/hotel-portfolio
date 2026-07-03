@@ -11,10 +11,8 @@
 - `demos/architector/` — персональное демо для апарт-отеля «Архитектор».
 - `demos/monteville/` — персональное демо для «Монтевиль by Adamand Resort».
 - `demos/center-plaza/` — персональное демо для Center Plaza Sochi.
-- `first-leads-sochi.csv` — стартовая база из 25 лидов.
-- `client-outreach.md` — скрипты первых сообщений.
-- `sales-pipeline.md` — воронка и статусы продаж.
-- `go-to-market-plan.md` — план размещения портфолио и поиска первых клиентов.
+
+Внутренние материалы по поиску клиентов и продажам вынесены из публичного сайта в папку `outputs/hotel-sales-materials`.
 
 ## Локальный просмотр
 
