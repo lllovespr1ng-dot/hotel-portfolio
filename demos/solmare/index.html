@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solmare Family Resort | Кейс цифрового гида</title>
+    <style>
+      :root {
+        --sea: #0f7885;
+        --aqua: #70d6cf;
+        --coral: #f26f4b;
+        --sand: #fff1c9;
+        --sun: #ffd36a;
+        --ink: #18434b;
+        --muted: #667c7d;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 18% 10%, rgba(255, 211, 106, 0.72), transparent 20%),
+          linear-gradient(180deg, #d8fbff 0%, #fff1c9 56%, #ffe2c4 100%);
+        color: var(--ink);
+        font-family: Inter, "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .shell {
+        width: min(1140px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .top {
+        display: flex;
+        justify-content: space-between;
+        padding: 22px 0;
+        color: var(--sea);
+        font-weight: 900;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 390px;
+        gap: 36px;
+        align-items: center;
+        padding: 52px 0 66px;
+      }
+
+      .badge {
+        display: inline-flex;
+        margin-bottom: 18px;
+        padding: 9px 13px;
+        border-radius: 999px;
+        background: #fff;
+        color: var(--coral);
+        font-size: 13px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 780px;
+        margin: 0 0 20px;
+        color: var(--sea);
+        font-size: clamp(44px, 7vw, 94px);
+        line-height: 0.9;
+        letter-spacing: -0.06em;
+      }
+
+      h2 {
+        margin: 0 0 16px;
+        color: var(--sea);
+        font-size: clamp(31px, 4vw, 56px);
+        line-height: 0.98;
+        letter-spacing: -0.045em;
+      }
+
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      .lead {
+        max-width: 680px;
+        color: #315f64;
+        font-size: 20px;
+        line-height: 1.42;
+      }
+
+      .phone {
+        overflow: hidden;
+        border: 10px solid #17383d;
+        border-radius: 40px;
+        background: #fff8df;
+        box-shadow: 0 28px 72px rgba(15, 120, 133, 0.22);
+      }
+
+      .phone-head {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px;
+        background: #fff;
+        color: var(--sea);
+        font-weight: 900;
+      }
+
+      .room {
+        padding: 9px;
+        background: var(--sun);
+        color: var(--ink);
+        font-size: 13px;
+        font-weight: 900;
+        text-align: center;
+      }
+
+      .screen {
+        padding: 20px;
+      }
+
+      .screen h2 {
+        margin-bottom: 8px;
+        font-size: 36px;
+      }
+
+      .tiles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .tile {
+        min-height: 98px;
+        display: grid;
+        align-content: center;
+        gap: 7px;
+        padding: 13px;
+        border-radius: 22px;
+        background: #fff;
+        box-shadow: 0 10px 22px rgba(15, 120, 133, 0.12);
+        color: var(--sea);
+        font-weight: 900;
+      }
+
+      .tile span {
+        color: var(--coral);
+        font-size: 12px;
+      }
+
+      .section {
+        padding: 58px 0;
+        border-top: 1px solid rgba(15, 120, 133, 0.18);
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .card {
+        min-height: 210px;
+        padding: 22px;
+        border: 2px solid rgba(255, 255, 255, 0.72);
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.72);
+        box-shadow: 0 18px 42px rgba(15, 120, 133, 0.1);
+      }
+
+      .card h3 {
+        color: var(--coral);
+        font-size: 25px;
+      }
+
+      .card p {
+        color: var(--muted);
+        line-height: 1.45;
+      }
+
+      .schedule {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .slot {
+        padding: 18px;
+        border-radius: 22px;
+        background: var(--sea);
+        color: #fff;
+      }
+
+      .slot strong {
+        display: block;
+        margin-bottom: 16px;
+        color: var(--sun);
+        font-size: 24px;
+      }
+
+      .footer {
+        padding: 36px 0 54px;
+        color: var(--muted);
+      }
+
+      @media (max-width: 880px) {
+        .hero,
+        .cards,
+        .schedule {
+          grid-template-columns: 1fr;
+        }
+
+        .phone {
+          max-width: 390px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top shell">
+      <span>Solmare Family Resort</span>
+      <span>RU / EN</span>
+    </header>
+
+    <main>
+      <section class="hero shell">
+        <div>
+          <span class="badge">Семейный курорт у моря</span>
+          <h1>Все расписание отдыха семьи в одном QR-гиде</h1>
+          <p class="lead">Вымышленный кейс для пляжного курорта: гость видит питание, детский клуб, бассейны, пляжные правила, активности на день и может отправить заявку на сервис без поиска по чатам и буклетам.</p>
+        </div>
+
+        <div class="phone">
+          <div class="phone-head">
+            <span>SOLMARE</span>
+            <span>Family</span>
+          </div>
+          <div class="room">Корпус Sea · 407</div>
+          <div class="screen">
+            <h2>Сегодня у моря</h2>
+            <p>Пляж, питание, детский клуб и услуги для семьи.</p>
+            <div class="tiles">
+              <div class="tile"><span>08:00-11:00</span>Завтрак</div>
+              <div class="tile"><span>10:00</span>Детский клуб</div>
+              <div class="tile"><span>12:30</span>Аквааэробика</div>
+              <div class="tile"><span>18:00</span>Мини-диско</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell">
+        <h2>Разделы курорта</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Для родителей</h3>
+            <p>Расписание питания, няня, детское меню, аптека, аренда коляски, прачечная и связь с guest relations.</p>
+          </article>
+          <article class="card">
+            <h3>Для детей</h3>
+            <p>Детский клуб, мастер-классы, мини-диско, бассейн, возрастные группы и правила посещения.</p>
+          </article>
+          <article class="card">
+            <h3>Пляж и бассейны</h3>
+            <p>Полотенца, шезлонги, безопасность, расписание спасателей, аренда сапбордов и пляжный бар.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell">
+        <h2>Пример расписания в гиде</h2>
+        <div class="schedule">
+          <div class="slot"><strong>08:00</strong>Завтрак в главном ресторане.</div>
+          <div class="slot"><strong>10:00</strong>Детский клуб: морская мастерская.</div>
+          <div class="slot"><strong>15:00</strong>Семейный турнир у бассейна.</div>
+          <div class="slot"><strong>20:30</strong>Кино под открытым небом.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer shell">Вымышленный кейс для демонстрации продукта. Не является сайтом реального отеля.</footer>
+  </body>
+</html>

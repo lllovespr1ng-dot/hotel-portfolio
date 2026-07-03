@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mira City Hotel | Кейс цифрового гида</title>
+    <style>
+      :root {
+        --ink: #17243a;
+        --blue: #2f6da3;
+        --sky: #e9f1fb;
+        --paper: #ffffff;
+        --line: #d7e0eb;
+        --muted: #637189;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          linear-gradient(90deg, rgba(47, 109, 163, 0.08) 1px, transparent 1px),
+          linear-gradient(180deg, #f8fbff 0%, #e7edf6 100%);
+        background-size: 42px 42px, auto;
+        color: var(--ink);
+        font-family: Inter, "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .shell {
+        width: min(1160px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 0;
+        border-bottom: 1px solid var(--line);
+        font-weight: 900;
+      }
+
+      .top span:last-child {
+        color: var(--blue);
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(330px, 0.8fr);
+        gap: 34px;
+        align-items: center;
+        padding: 62px 0;
+      }
+
+      .label {
+        margin: 0 0 16px;
+        color: var(--blue);
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 0 0 20px;
+        font-size: clamp(44px, 7vw, 92px);
+        line-height: 0.9;
+        letter-spacing: -0.065em;
+      }
+
+      h2 {
+        margin: 0 0 16px;
+        font-size: clamp(30px, 4vw, 56px);
+        line-height: 0.98;
+        letter-spacing: -0.05em;
+      }
+
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      .lead {
+        max-width: 650px;
+        color: var(--muted);
+        font-size: 20px;
+        line-height: 1.42;
+      }
+
+      .dashboard {
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.82);
+        box-shadow: 0 26px 70px rgba(23, 36, 58, 0.12);
+      }
+
+      .dash-head {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 20px;
+        border-bottom: 1px solid var(--line);
+        color: var(--blue);
+        font-weight: 900;
+      }
+
+      .dash-body {
+        padding: 20px;
+      }
+
+      .room {
+        margin-bottom: 14px;
+        padding: 10px 12px;
+        border-radius: 999px;
+        background: var(--sky);
+        color: var(--ink);
+        font-weight: 900;
+      }
+
+      .quick {
+        display: grid;
+        gap: 10px;
+      }
+
+      .row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 14px;
+        align-items: center;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: var(--paper);
+      }
+
+      .row strong {
+        display: block;
+      }
+
+      .row span {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .status {
+        color: var(--blue);
+        font-weight: 900;
+      }
+
+      .section {
+        padding: 58px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .card {
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--paper);
+      }
+
+      .card h3 {
+        color: var(--blue);
+        font-size: 22px;
+      }
+
+      .card p {
+        color: var(--muted);
+        line-height: 1.43;
+      }
+
+      .flow {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .flow li {
+        min-height: 124px;
+        padding: 16px;
+        border-radius: 18px;
+        background: var(--ink);
+        color: #fff;
+        font-weight: 800;
+      }
+
+      .flow span {
+        display: block;
+        margin-bottom: 20px;
+        color: #8fc4f3;
+      }
+
+      .footer {
+        padding: 34px 0 54px;
+        color: var(--muted);
+      }
+
+      @media (max-width: 920px) {
+        .hero,
+        .grid,
+        .flow {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top shell">
+      <span>Mira City Hotel</span>
+      <span>Business stay guide</span>
+    </header>
+
+    <main>
+      <section class="hero shell">
+        <div>
+          <p class="label">Городской бизнес-отель</p>
+          <h1>Гость получает деловой сервис без очереди на ресепшен</h1>
+          <p class="lead">Вымышленный кейс для отеля рядом с деловым центром: цифровой гид помогает гостю быстро найти Wi-Fi, завтрак, документы, переговорные, парковку и поддержку 24/7.</p>
+        </div>
+
+        <aside class="dashboard" aria-label="Пример интерфейса Mira City Hotel">
+          <div class="dash-head">
+            <span>MIRA</span>
+            <span>RU / EN</span>
+          </div>
+          <div class="dash-body">
+            <div class="room">Номер 1208 · бизнес-этаж</div>
+            <div class="quick">
+              <div class="row"><div><strong>Wi-Fi и рабочее место</strong><span>Сеть, пароль, коворкинг</span></div><div class="status">Открыть</div></div>
+              <div class="row"><div><strong>Документы</strong><span>Счет, закрывающие, чек</span></div><div class="status">Запрос</div></div>
+              <div class="row"><div><strong>Переговорная</strong><span>Свободные слоты сегодня</span></div><div class="status">3 слота</div></div>
+              <div class="row"><div><strong>Такси и парковка</strong><span>Въезд, тарифы, вызов такси</span></div><div class="status">24/7</div></div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section shell">
+        <h2>Разделы для гостя</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Деловая поездка</h3>
+            <p>Интернет, рабочие зоны, печать документов, ранний завтрак и быстрый выезд.</p>
+          </article>
+          <article class="card">
+            <h3>Конференции</h3>
+            <p>Залы, оборудование, кофе-брейки, навигация по этажам и заявка координатору.</p>
+          </article>
+          <article class="card">
+            <h3>Финансы</h3>
+            <p>Запрос счета, закрывающих документов, детализации проживания и данных для бухгалтерии.</p>
+          </article>
+          <article class="card">
+            <h3>Город</h3>
+            <p>Парковка, такси, ближайшие рестораны, аптеки, банкоматы и маршрут до аэропорта.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell">
+        <h2>Как это снижает нагрузку</h2>
+        <ol class="flow">
+          <li><span>01</span>Гость сканирует QR в номере.</li>
+          <li><span>02</span>Вводит номер комнаты.</li>
+          <li><span>03</span>Выбирает нужный раздел.</li>
+          <li><span>04</span>Оставляет заявку без звонка.</li>
+          <li><span>05</span>Команда получает понятный запрос.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="footer shell">Вымышленный кейс для демонстрации продукта. Не является сайтом реального отеля.</footer>
+  </body>
+</html>

@@ -297,6 +297,68 @@ h3 {
     var(--green-900);
 }
 
+.case-nordline .case-visual {
+  background:
+    radial-gradient(circle at top right, rgba(201, 154, 91, 0.34), transparent 35%),
+    linear-gradient(145deg, #0e1f22 0%, #20382f 55%, #6d5739 100%);
+}
+
+.case-mira .case-visual {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.7), transparent 44%),
+    linear-gradient(145deg, #e8edf6 0%, #9fb3ca 52%, #23364f 100%);
+}
+
+.case-solmare .case-visual {
+  background:
+    radial-gradient(circle at 22% 18%, rgba(255, 255, 255, 0.62), transparent 24%),
+    linear-gradient(145deg, #ffe0a9 0%, #ef8a63 50%, #39a9b3 100%);
+}
+
+.case-zvezdny .case-visual {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.08), transparent 45%),
+    var(--green-900);
+}
+
+.case-nordline .case-mini {
+  background: #102224;
+}
+
+.case-nordline .case-mini strong {
+  color: #e7d3ac;
+}
+
+.case-nordline .case-mini span {
+  background: #c99a5b;
+}
+
+.case-mira .case-mini {
+  background: #f8fbff;
+  border-color: #1d2c44;
+}
+
+.case-mira .case-mini strong {
+  color: #1d2c44;
+}
+
+.case-mira .case-mini span {
+  background: #2f6da3;
+}
+
+.case-solmare .case-mini {
+  background: #fff7df;
+  border-color: #f26f4b;
+}
+
+.case-solmare .case-mini strong {
+  color: #0f6670;
+}
+
+.case-solmare .case-mini span {
+  background: #f26f4b;
+}
+
 .case-mini {
   width: 150px;
   min-height: 190px;
@@ -575,4 +637,3 @@ h3 {
     width: min(310px, 88%);
   }
 }
-
